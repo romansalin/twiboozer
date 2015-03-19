@@ -10,6 +10,6 @@ setup(
     keywords="twitter tweet bot delirium generator",
     url="https://github.com/romansalin/twiboozer",
     version="0.1",
-    install_requires=[],
+    install_requires=["twitter>=1.16"],
     packages=find_packages(),
 )

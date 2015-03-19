@@ -1,0 +1,6 @@
+.idea
+*.pyc
+*.pio
+*.log
+config.py
+build/

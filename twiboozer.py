@@ -19,6 +19,7 @@ def format_tweet(tweet):
 
 
 def get_end_tweet():
+    """Get random punctuation at the end of the sentence."""
     endings = ('.', '!')
     rate = 0.2
     return endings[random.random() < rate]

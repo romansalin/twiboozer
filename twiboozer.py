@@ -13,9 +13,9 @@ from twibot import TwiBot
 
 def format_tweet(tweet):
     """Format tweet after generation."""
-    if tweet[-1] not in ".?!":
-        return "{0}{1}".format(tweet, get_end_tweet())
-    return tweet
+    if tweet[-1] in ".?!":
+        return tweet
+    return "{0}{1}".format(tweet, get_end_tweet())
 
 
 def get_end_tweet():
@@ -39,7 +39,7 @@ def train(tweets):
 
 def main():
     twibot = TwiBot()
-    tweets = twibot.get_timeline(count=200)
+    tweets = twibot.get_timeline(count=300)
 
     mc = train(tweets)
     tweet = mc.generateString()

@@ -1,7 +1,7 @@
 # TwiBoozer #
 
-Simple delirium generator for Twitter account based on the tweets of followers
+Simple Markov chain text generator integrated with your Twitter account and based on timeline
 
 ### Usage ###
 
-python3 ./twiboozer.py
+# TODO

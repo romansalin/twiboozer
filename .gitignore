@@ -3,4 +3,5 @@
 *.pio
 *.log
 config.py
+db/
 build/

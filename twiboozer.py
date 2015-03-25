@@ -14,12 +14,12 @@ from twibot import TwiBot
 
 def format_tweet(tweet):
     """Format tweet after generation."""
-    if tweet[-1] not in ".?!":
-        tweet = "{0}{1}".format(tweet, get_end_tweet())
-
     max_len = 140
     if len(tweet) > max_len:
-        tweet = textwrap.wrap(tweet, max_len)[0]
+        tweet = textwrap.wrap(tweet, max_len - 1)[0]
+
+    if tweet[-1] not in ".?!":
+        tweet += get_end_tweet()
     return tweet
 
 

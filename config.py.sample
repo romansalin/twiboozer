@@ -1,7 +1,0 @@
-# -*- encoding: utf-8 -*-
-
-# Keys and Access Tokens
-OAUTH_TOKEN = ''
-OAUTH_SECRET = ''
-CONSUMER_KEY = ''
-CONSUMER_SECRET = ''

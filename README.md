@@ -18,7 +18,7 @@ sudo pip install twiboozer
 ## Usage
 
 ```python
-from twiboozer import TwiBot
+from twiboozer import TwiBot, MarkovChain
 
 
 OAUTH_TOKEN = ''
